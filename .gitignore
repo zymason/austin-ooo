@@ -1,0 +1,46 @@
+# Exclude all files, then include in only the required ones
+*
+
+# Allow for files nested within directories, ignore any output directory, this
+# is where compiled files go
+!*/
+output/
+
+# Allow for Verilog and System Verilog files
+!*.sv
+!*.v
+!*.vh
+
+# Allow only for .S assembly files.
+!*.S
+
+# Allow for C and header files
+!*.c
+!*.h
+!*.cpp
+
+# Allow for DC script files and TCL scripts
+!*.tcl
+!*.dc
+
+# Allow for shell, Perl, and Python scripts
+!*.sh
+!*.py
+!*.pl
+
+# Allow for register dump files (for checking results)
+!*.reg
+
+# Allow for Makefiles
+!**/Makefile
+!*.mk
+
+# Allow for linker scripts
+!*.ld
+
+# Allow for gitignore files
+!.gitignore
+
+# Allow for the license and readme files
+!/LICENSE
+!/README.md
